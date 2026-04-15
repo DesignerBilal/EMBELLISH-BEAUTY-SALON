@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+@theme {
+  --color-rose-gold: #B76E79;
+  --color-warm-ivory: #FAF5EE;
+  --color-charcoal: #1C1C1C;
+  --color-brushed-gold: #C9A96E;
+
+  --font-playfair: "Playfair Display", serif;
+  --font-cormorant: "Cormorant Garamond", serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-warm-ivory text-charcoal font-cormorant text-lg;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-playfair;
+  }
+}
